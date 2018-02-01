@@ -1,0 +1,99 @@
+        var ctx = document.getElementById('residueLine').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels:["March 1","March 2","March 3","March 4","March 5","March 6","March 7","March 8","March 9","March 10","March 11","March 12","March 13","March 14","March 15","March 16","March 17","March 18","March 19","March 20","March 21","March 22","March 23","March 24"
+                ,"March 25","March 26","March 27","March 28","March 29","March 30","March 31"],
+                datasets: [{
+                  fill:false,
+                    label: "Actual Occupancy",
+                    yAxisID:  "Calculated Consumption Week",
+                    fontColor:"white",
+                    backgroundColor: 'black',
+                    pointRadius:1,
+                    pointBackgroundColor :'black',
+                    borderColor: 'black',
+                    data:data1,
+                    pointHoverRadius:0,
+                    pointHoverBackgroundColor :''
+                }
+              ]
+            },
+
+            // Configuration options go here
+            options: {
+              title: {
+                  display: true,
+                  fontColor:'white',
+                  fontSize:"20"
+              },
+              responsive:true,
+             maintainAspectRatio: false,
+              legend: {
+                display:'true',
+                fontColor:  '#666',
+                fontSize:19,
+
+           },scales: {
+                    xAxes: [{
+
+           //            ticks: {
+           //     autoSkip: true,
+           //     maxTicksLimit: 10
+           // },
+                      scaleLabel: {
+          display: true,
+          labelString: 'Date',
+          fontColor:  "white",
+          fontSize:19,
+        },
+                        gridLines: {
+                            display: false,
+                        },
+                        ticks: {
+                          // autoSkip: false,
+                          maxRotation: 0,
+                           minRotation: 0,
+                              autoSkip: true,
+                              maxTicksLimit: 42,
+                          fontColor: "white",
+                          fontSize:11// this here
+                        },
+                    },
+          ],
+                    yAxes: [
+                    {
+                      scaleLabel: {
+          display: true,
+          labelString: 'Residue',
+          fontColor:  "white",
+          fontSize:19,
+        },
+                      id: 'Calculated Consumption Week',
+                      type: 'linear',
+                      position: 'left',
+                          display: true,
+                        gridLines: {
+                            display: false,
+                        },
+                        ticks: {
+                          min:-5,
+                          max:5,
+                          fontColor: "white",
+                          fontSize:15 // this here
+                        },
+                    }
+                  ],
+                }
+              }
+        });
+var abc = setInterval(addData1, 1000);
+function addData1(){
+  data1 = [3,4]
+  chart.data.datasets[0].data.push(3);
+console.log(chart.data);
+chart.update();
+}
