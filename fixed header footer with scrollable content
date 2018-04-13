@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper{display:flex;height:100%;flex-direction:column}
+header{background-color:red;width:100%;height:20px;}
+footer{background-color:yellow;width:100%;height:20px}
+.content{
+  background-color:green;
+  overflow-y:scroll;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header>Header</header>
+  <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut auctor metus, id efficitur purus. Mauris pellentesque faucibus consectetur. Nulla velit odio, pharetra non est vitae, ultricies sodales ex. Etiam vestibulum erat a dui sollicitudin, eget scelerisque neque pretium. Donec pellentesque molestie ante, sit amet lobortis nunc fermentum euismod. Fusce nunc odio, eleifend in velit eu, imperdiet pellentesque urna. Phasellus laoreet, mi nec tempor rutrum, ligula mauris vestibulum nisl, sit amet pretium diam sapien vel purus. Nullam quis est interdum elit facilisis blandit eu sit amet tortor. Mauris placerat, neque eleifend feugiat ultrices, turpis felis lacinia nisl, vulputate dictum massa arcu eget magna. Nullam tortor justo, pellentesque at consequat ac, mattis faucibus mi. Suspendisse id odio et felis sagittis tincidunt ac nec justo. Mauris lobortis elementum metus, in posuere dolor efficitur nec. Quisque semper elit dui, nec aliquet nisi sagittis at. Nunc ultrices id tortor sed venenatis. Nulla eget dolor est. Nullam vehicula enim dolor, eu semper magna semper vel.
+
+Sed lobortis dictum metus, ut suscipit nulla porta non. Phasellus tristique auctor erat, eu molestie quam mattis sed. Fusce luctus libero sit amet pretium elementum. Sed suscipit, ex in dignissim dignissim, massa justo ultricies leo, eu efficitur libero risus ut magna. Integer volutpat tincidunt sem quis euismod. Donec placerat massa vel quam posuere pellentesque. Aliquam tincidunt turpis arcu. Aliquam erat volutpat. Praesent eu iaculis velit, eu scelerisque mauris. Ut egestas, erat tempor consequat rhoncus, ex nibh lacinia sem, sit amet hendrerit quam turpis in ante. Aliquam eget mi in ligula pretium consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Sed eget sodales arcu, ac rhoncus neque. Etiam quis justo in nisi dictum scelerisque. Suspendisse cursus augue a est vulputate euismod. Mauris volutpat rutrum augue, quis egestas purus pretium imperdiet. Nulla fermentum est vitae libero sagittis, nec volutpat lectus ullamcorper. Fusce luctus justo est, pellentesque maximus metus tristique ut. Nulla eu mauris aliquet, pretium erat lobortis, aliquet mi. Aliquam sed felis id nisi varius feugiat eu sed velit. Fusce varius ante quis ipsum rhoncus venenatis. In id urna lacus. Fusce quis fermentum tortor. Sed gravida feugiat lorem quis ultricies. Nam nibh urna, laoreet eget pellentesque vel, facilisis eget sapien. Praesent vel pellentesque ipsum, id finibus justo.
+
+Aenean ac nisi vel tellus suscipit molestie. Fusce tincidunt velit ac orci feugiat commodo. Nullam id risus et velit fringilla sagittis. Pellentesque placerat erat eu est rhoncus tincidunt. Duis rutrum, arcu ac imperdiet vulputate, libero tortor placerat felis, a tristique est enim quis lacus. Etiam non mauris at orci elementum imperdiet. Suspendisse eros justo, bibendum pretium ultrices at, rhoncus nec enim. Vivamus a congue ligula, ut malesuada leo. Proin venenatis vehicula augue at consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed a magna ac lacus malesuada semper a ut velit. Mauris non nibh ex. In eu dolor id nisi eleifend vehicula.
+
+Nulla iaculis, nulla pretium viverra vehicula, erat neque interdum felis, nec venenatis libero sapien id ipsum. Vestibulum vulputate eget velit a pharetra. Mauris at condimentum lacus. Maecenas placerat velit non risus sollicitudin convallis. Fusce a congue velit, non aliquam massa. Etiam vel massa magna. Praesent sollicitudin id neque tempus rhoncus. Nunc non eleifend ipsum. Sed sagittis magna nisi, vel placerat lacus facilisis at. Nunc rhoncus diam a feugiat condimentum. Quisque auctor mauris sit amet bibendum tempus. Proin sed consectetur orci. Nam et enim id justo pharetra ornare ac sit amet nunc. Donec ultricies, justo quis aliquet egestas, arcu arcu tristique sem, id ultricies ex magna vitae nulla.
+  </div>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>
